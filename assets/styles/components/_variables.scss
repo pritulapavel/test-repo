@@ -1,0 +1,39 @@
+/* 1. COLORS */
+
+/* 1.1 light theme colors */
+$color-background-main: #F5F5F5; //default color of body
+$color-header-primary: #052A44; // header background
+$color-btn-primary: #052A44; // buttons default background
+$color-btn-secondary: #ffffff; // buttons default background
+$color-text-primary: #FFFFFF; // default text color in light theme
+$color-text-secondary: #000000; // default text color in light theme
+$color-text-heading: #183B56; // heading text color
+$color-accent: #E8DB84; //  marked text, blocks bg color, yellow color
+$color-text-strong: #1E2A39; //carier small cards big text color
+$color-text-muted: #2E2E2E;  //carier small cards small text color
+$color-text-subtle: #071210; //  section heading secondary text and about us card paragraph text color
+$color-input-placeholder: #1E1E1E; // color for input placeholder
+
+/* 1.2 dark theme colors */
+$color-background-main-dark: #1E2A39; //default color of body
+$color-text-primary-dark: #000000; // default text color in dark theme
+$color-text-secondary-dark: #FFFFFF; // default text color in dark theme
+$color-text-heading-dark: #ffffff; // heading text color
+$color-text-subtle-dark: #071210; //  section heading secondary text and about us card paragraph text color
+
+
+/* 2 Additional variables */
+
+
+/* 2.1 Border radius variables */
+$border-radius-default: 1.6rem; // default border-radius size
+$border-radius-btn: 0.8rem; // buttons border-radius size
+$border-radius-icon: 50%; // icons border-radius size
+$border-radius-slider-btn: 0.6rem; // icons border-radius size
+
+
+/* 2.2 Fonts variables */
+$font-avenir: 'Avenir LT Std', sans-serif;
+$font-jakarta: 'Jakarta', sans-serif;
+$font-poppins: 'Poppins', sans-serif;
+

@@ -1,0 +1,50 @@
+@use "../components/variables" as *;
+
+*,*::before,*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+html {
+	font-size: 62.5%; // for user REM values. default 1rem is 10px, if you need 5px = 0.5rem, or 15px = 1.5rem
+}
+
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.5;
+	font-family: $font-poppins;
+    background-color: $color-background-main;
+}
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+ul[role="list"], ol[role="list"] {
+	list-style: none;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-wrap: balance;
+}
