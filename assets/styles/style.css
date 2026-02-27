@@ -672,4 +672,128 @@ main {
   }
 }
 
+.story-wrapper {
+  display: grid;
+  place-content: center;
+  column-gap: 8.4rem;
+  border-radius: 2.9rem;
+  background-color: #E8DB84;
+  grid-template: 1fr/repeat(2, 1fr);
+  padding: 2.4rem 1.3rem;
+  padding: 4rem 8rem 6.5rem 5.9rem;
+  position: relative;
+}
+@media (max-width: 1234px) {
+  .story-wrapper {
+    display: none;
+  }
+}
+.story-wrapper::before {
+  content: "";
+  display: block;
+  width: 19.7rem;
+  height: 19.7rem;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  left: 51rem;
+  bottom: 9rem;
+  background: #052A44;
+}
+.story-wrapper .story-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.story-wrapper .story-title h2 {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 63px;
+  text-transform: capitalize;
+}
+.story-wrapper .story-title p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+.story-wrapper ul {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  row-gap: 2rem;
+  margin-top: 2.4rem;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  list-style: none;
+}
+.story-wrapper ul span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.3rem;
+  height: 5.3rem;
+  border-radius: 50%;
+  background: #FFFFFF;
+  margin-right: 1.2rem;
+}
+.story-wrapper .story-btn {
+  display: block;
+  margin-top: 3.2rem;
+  text-align: center;
+  padding: 15px 43px;
+  background: #052A44;
+  width: 17.9rem;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.story-card {
+  width: 46.2rem;
+  height: 47.4rem;
+  background: rgba(234, 234, 234, 0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.story-points {
+  display: flex;
+  align-items: center;
+  padding-left: 1.6rem;
+  gap: 0.6rem;
+  height: 2.7rem;
+  background-color: rgba(234, 234, 234, 0.3);
+  backdrop-filter: blur(25.2874px);
+}
+.story-points span {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #f6c566;
+  border-radius: 50%;
+}
+.story-points span:first-child {
+  background: #ee6767;
+}
+.story-points span:last-child {
+  background: #5beb7b;
+}
+
+.img-story {
+  display: grid;
+  margin: 2rem 3.2rem 2.4rem 3.2rem;
+  gap: 2.4rem;
+  grid-template: 20.3rem 17.6rem/15.1rem 1fr;
+}
+.img-story img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-story img:first-child {
+  grid-area: 1/1/2/3;
+}
+
 /*# sourceMappingURL=style.css.map */
