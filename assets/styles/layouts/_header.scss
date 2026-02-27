@@ -1,8 +1,135 @@
-@use '../base/reset' as *;
-@use '../components/variables' as *;
-@use '../components/mixins' as *;
+@use '../abstract/variables' as *;
+@use '../abstract/mixins' as *;
 
 .header {
-    min-width: 27.2rem;
-    margin: 0 auto;
+    width: 100%;
+}
+
+.header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+.navbar {
+  .menu-toggle {
+    display: none; 
+
+    
+    &:checked ~ .menu-overlay {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .burger-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    width: 100px;
+    height: 37px;
+    
+    
+    .icon {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      width: 18px;
+
+      span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #183B56; // ფერი ფიგმიდან
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .menu-overlay {
+    position: absolute;
+    
+    right: 0;
+    width: 200px; // ან 80% დიზაინის მიხედვით
+    height: 350px;
+    background: white;
+    padding: 20px;
+    transform: translateX(100%); // თავიდან დამალულია მარჯვნივ
+    transition: transform 0.4s ease-in-out;
+    z-index: 99;
+
+    .menu-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+
+      a {
+        text-decoration: none;
+        color: #000000;      
+        font-size: 16px;
+      }
+
+      .btn-primary {
+        display: block;
+        padding: 12px 30px;
+        border: 2px;
+        border-radius: 8px;
+        background-color: #000000;
+        color: white;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+// dark mode
+
+
+#theme-toggle:checked ~ .page {
+
+    background-color: #0f172a;
+    color: #ffffff;
+
+     .header {
+    background-color: #0f172a;
+  }
+
+  /* burger lines */
+  .burger-button .icon span {
+    background-color: #ffffff;
+  }
+
+  
+  /* menu */
+  .menu-overlay {
+    background-color: #1e293b;
+
+    a {
+      color: #ffffff;
+    }
+
+    .btn-primary {
+      background-color: #ffffff;
+      color: #0f172a;
+    }
+  }
 }

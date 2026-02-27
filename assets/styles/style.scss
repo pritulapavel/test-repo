@@ -1,7 +1,13 @@
-@use './base/reset' as *;
-@use './components/variables' as *;
-@use './components/mixins' as *;
-@use './layouts/header' as *;
-@use './layouts/main' as *;
-@use './layouts/footer' as *;
-
+@use './abstract/variables' as *;
+@use './abstract/mixins' as *;
+@use './base/fonts';
+@use './base/reset';
+@use './layouts/header';
+@use './layouts/main';
+@use './layouts/footer';
+@use './sections/hero';
+@use './sections/about';
+@use './sections/services';
+@use './sections/stories';
+@use './sections/reviews';
+@use './sections/contact'; 
