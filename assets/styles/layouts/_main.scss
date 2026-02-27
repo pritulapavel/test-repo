@@ -1,6 +1,12 @@
 @use '../abstract/variables' as *;
 @use '../abstract/mixins' as *;
-
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  flex-direction: column;
+}
 .container {
   width: 100%;
   padding: 0 1.6rem;
